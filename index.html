@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+ 
+
+    <title>Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+     
+      
+    </ul>
+  </div>
+</nav>
+ 
+
+<div>
+<h3>Probability</h3>
+<input type="button" value = "Low" id="1" onclick="f(1);;">
+<input type="button" value = "Rather low " id="2" onclick="f(2); ">
+<input type="button" value = "Rather high" id="3" onclick="f(3);">
+<input type="button" value = "High" id="4" onclick="f(4); ">
+
+
+<h3>Impact</h3>
+<input type="button" value = "Low" id="1" onclick="f(1);;">
+<input type="button" value = "Moderate" id="2" onclick="f(2); ">
+<input type="button" value = "High" id="3" onclick="f(3);">
+<input type="button" value = "Severe" id="4" onclick="f(4); ">
+
+    
+
+    <h3>Compliance Approval</h3>
+    <input type="button" value = "No" id="1" onclick="f(1);;">
+
+<input type="button" value = "Yes" id="6" onclick="f(4);">
+       
+
+
+
+    </div>
+
+        
+        
+
+<p id="demo"></p>
+
+
+
+<input type="text" id="total">
+<button onclick="reset()" >Reset</button>
+
+<script>
+let i= 0;
+let myBtn = 1;
+let myBtn1= 2;
+let myBtn2= 3;
+let myBtn3 =4;
+let myBtn4 = 1;
+let myBtn5= 2;
+let myBtn6= 3;
+let myBtn7 =4;
+let myBtn8 = 1;
+let myBtn9= 2;
+
+function f1(){
+
+myBtn=1;
+}
+function f2(){
+
+myBtn1=5; 
+}
+function f3(){
+
+
+myBtn2=10;
+}
+function f4(){
+
+myBtn3=20
+}
+function f5(){
+
+ myBtn4=50;
+}
+function f6(){ 
+myBtn5=100;
+}
+
+function f6(){ 
+myBtn6=100;
+}
+
+
+var sum = 0;
+
+function f(val){
+  sum += val;
+  document.getElementById("total").value = sum;
+}
+function reset(){
+  sum = 0;
+  document.getElementById("total").value = sum;
+}
+
+/*document.getElementById("myBtn").addEventListener("click", function() {
+  myFunction(myBtn);
+});
+
+document.getElementById("myBtn1").addEventListener("click", function() {
+  myFunction(myBtn1);
+});
+
+document.getElementById("myBtn2").addEventListener("click", function() {
+  myFunction(myBtn2);
+});
+document.getElementById("myBtn3").addEventListener("click", function() {
+  myFunction(myBtn3);
+});
+
+document.getElementById("myBtn4").addEventListener("click", function() {
+  myFunction(myBtn4);
+});
+document.getElementById("myBtn5").addEventListener("click", function() {
+  myFunction(myBtn5);
+});
+
+document.getElementById("myBtn6").addEventListener("click", function() {
+  myFunction(myBtn6);
+});
+document.getElementById("myBtn7").addEventListener("click", function() {
+  myFunction(myBtn7);
+});
+document.getElementById("myBtn8").addEventListener("click", function() {
+  myFunction(myBtn8);
+});
+document.getElementById("myBtn9").addEventListener("click", function() {
+  myFunction(myBtn9);
+});
+
+
+
+
+
+function myFunction(a) {
+  document.getElementById("demo").innerHTML = a ;
+}*/
+
+
+</script>
+        
+</body>
+
+
+</html>
